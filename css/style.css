@@ -51,16 +51,28 @@ article h2 {
 .gallery div {
     width: 288px;
     height: 155px;
-    background-color: black;
+}
+
+article .gallery .lens {
+    display: none;
+    width: 48px;
+    height: 48px;
+    background-image: url("../images/ic_zoom_in_white_48dp_1x.png");
 }
 
 .gallery a {
-    display: block;
+    display: flex;
     height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery a:hover {
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.gallery a:hover .lens {
+    display: block;
 }
 
 .gallery .one {
