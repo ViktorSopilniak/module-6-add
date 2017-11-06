@@ -1,0 +1,162 @@
+body {
+    background-color: gray;
+}
+
+main,
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    padding: 0 0 40px;
+    width: 1024px;
+    background-color: white;
+}
+
+aside {
+    width: 230px;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Arial";
+    font-size: 0.8rem;
+    color: rgb(38, 53, 85);
+}
+
+h2 {
+    font-family: "Pathway Gothic One";
+    text-transform: uppercase;
+}
+
+
+/* ------- GALLERY ------- */
+
+article h2 {
+    padding: 20px 0 20px 60px;
+}
+
+.gallery {
+    margin: auto;
+    width: 900px;
+    height: 545px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.gallery div {
+    width: 288px;
+    height: 155px;
+    background-color: black;
+}
+
+.gallery a {
+    display: block;
+    height: 100%;
+}
+
+.gallery a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.gallery .one {
+    background: url("../images/Layer 87.jpg") no-repeat;
+}
+
+.gallery .two {
+    background: url("../images/Layer 88.jpg") no-repeat;
+}
+
+.gallery .three {
+    background: url("../images/Layer 89.jpg") no-repeat;
+}
+
+.gallery .four {
+    background: url("../images/Layer 90.jpg") no-repeat;
+}
+
+.gallery .five {
+    background: url("../images/Layer 91.jpg") no-repeat;
+}
+
+.gallery .six {
+    background: url("../images/Layer 92.jpg") no-repeat;
+}
+
+.gallery .seven {
+    background: url("../images/Layer 93.jpg") no-repeat;
+}
+
+.gallery .eight {
+    background: url("../images/Layer 94.jpg") no-repeat;
+}
+
+.gallery .nine {
+    background: url("../images/Layer 95.jpg") no-repeat;
+}
+
+
+/* -----  SOCIAL BUTTONS  ------- */
+
+.social li {
+    display: inline-block;
+}
+
+.social a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    filter: invert(0);
+    transition-duration: 0.2s;
+    background: url('../images/sprite-social_buttons.png') no-repeat;
+}
+
+.social .tweeter {
+    background-position-x: 0px;
+}
+
+.social .facebook {
+    background-position-x: -41px;
+}
+
+.social .gplus {
+    background-position-x: -82px;
+}
+
+.social .in {
+    background-position-x: -123px;
+}
+
+.social a:hover {
+    filter: invert(1);
+    transition-duration: 0.2s;
+}
+
+
+/* ------ ASIDE LISTS ----- */
+
+aside h2 {
+    padding: 20px 0 20px 0;
+    text-transform: uppercase;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0 10px 10px 10px;
+}
+
+aside li {
+    padding: 0 0 10px 0;
+}
+
+aside li::before {
+    content: "→";
+    color: #78c9ed;
+}
+
+
+/* ---------- FOOTER --------- */
